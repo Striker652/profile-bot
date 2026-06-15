@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic-settings
+python-multipart
+langchain
+langchain-community
+langchain-google-genai
+langchain-chroma
+chromadb
+tiktoken
+google-cloud-storage

@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: profile-bot-api
+    env: python
+    region: singapore     # closest to Hyderabad
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt && python -m scripts.ingest
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GOOGLE_API_KEY
+        sync: false       # means you set this manually in dashboard
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: CHAT_MODEL
+        value: gemini-1.5-flash
+      - key: EMBEDDING_MODEL
+        value: text-embedding-004
+      - key: RETRIEVER_K
+        value: 4
