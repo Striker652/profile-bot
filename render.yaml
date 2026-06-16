@@ -15,6 +15,6 @@ services:
       - key: CHAT_MODEL
         value: gemini-1.5-flash
       - key: EMBEDDING_MODEL
-        value: text-embedding-004
+        value: models/embedding-001
       - key: RETRIEVER_K
         value: 4
