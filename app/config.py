@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
     google_api_key: str = ""
-    allowed_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
+    allowed_origins: str = "http://localhost:5173,http://127.0.0.1:5173,https://striker652.github.io"
     langsmith_api_key: str = ""
     vector_store_gcs_uri: str = ""
     chat_model: str = "gemini-1.5-flash"
