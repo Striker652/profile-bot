@@ -2,7 +2,7 @@ services:
   - type: web
     name: profile-bot-api
     env: python
-    region: singapore     # closest to Hyderabad
+    region: singapore     
     plan: free
     healthCheckPath: /health
     buildCommand: pip install -r requirements.txt && python -m scripts.ingest
@@ -15,6 +15,6 @@ services:
       - key: CHAT_MODEL
         value: gemini-2.5-flash
       - key: EMBEDDING_MODEL
-        value: models/embedding-001
+        value: models/gemini-embedding-001
       - key: RETRIEVER_K
         value: 4
