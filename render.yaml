@@ -13,8 +13,8 @@ services:
       - key: ALLOWED_ORIGINS
         sync: false
       - key: CHAT_MODEL
-        value: gemini-1.5-flash
+        value: gemini-2.5-flash
       - key: EMBEDDING_MODEL
-        value: models/gemini-embedding-001
+        value: models/embedding-001
       - key: RETRIEVER_K
         value: 4
